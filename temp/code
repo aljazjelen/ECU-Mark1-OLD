@@ -1,0 +1,35 @@
+
+
+
+int adcVal = 0;
+int *ptr_adcVal;
+
+
+  /* USER CODE END WHILE */
+	  HAL_ADC_Start(&hadc);
+	  HAL_ADC_PollForConversion(&hadc,HAL_MAX_DELAY);
+	  ptr_adcVal = &adcVal;
+	  *ptr_adcVal = HAL_ADC_GetValue(&hadc);
+	  HAL_Delay(10);
+	  //adcVal = adcVal + 0;
+	  //sprintf("%f\n",adcVal);
+    /* USER CODE BEGIN 3 */
+  }
+  /* USER CODE END 3 */
+  
+  
+  
+  /* USER CODE BEGIN 4 */
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
+	if (GPIO_Pin == GPIO_PIN_3){
+		ptr_adcVal = &adcVal;
+		int a = 10000;
+		*ptr_adcVal = 10000;
+	}else{
+		__NOP();
+	}
+}
+
+
+/* USER CODE END 4 */
