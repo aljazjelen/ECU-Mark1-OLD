@@ -1,0 +1,5 @@
+ignition.c:39:5:Ignition_DefineIgnitionTeeth	24	static
+ignition.c:45:6:Ignition_SetIgnitionTiming	40	static
+ignition.c:92:10:Ignition_AngleToUs	24	static
+ignition.c:97:6:Ignition_FireCylinder	24	static
+ignition.c:128:6:Ignition_DwellCylinder	16	static

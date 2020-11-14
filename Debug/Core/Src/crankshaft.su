@@ -1,0 +1,6 @@
+crankshaft.c:36:6:Crank_Init	8	static
+crankshaft.c:41:6:Crank_HalGeberDriver	32	static
+crankshaft.c:83:6:Crank_TeethCounterReset	8	static
+crankshaft.c:88:6:Crank_TeethCounter	8	static
+crankshaft.c:96:6:Crank_AngleCalc	8	static
+crankshaft.c:102:6:Crank_CamPositionSync	8	static
